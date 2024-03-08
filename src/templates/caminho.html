@@ -6,11 +6,11 @@
     <h1>Coordenadas</h1>
     
     <ul>
-        {% for caminho in caminho %}
+        {% for caminho in caminhos %}
             <h3>Caminho</h3>
-            <li>id: {{ id.id }}</li>
-            <li>nome: {{ id.nome }}</li>
-            <li>coordenadas: {{ id.coordenadas }}</li>
+            <li>id: {{ caminho.id }}</li>
+            <li>nome: {{ caminho.nome }}</li>
+            <li>coordenadas: {{ caminho.coordenadas }}</li>
         {% endfor %}
     </ul>
 </body>

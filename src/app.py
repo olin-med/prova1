@@ -40,8 +40,8 @@ def buscar():
 @app.route("/pegar_caminho", methods=["GET", "POST"])
 def listar_by_id():
     id = request.form.get("id")
-    caminho = db.get(id == 'id')
-    return render_template("caminho.html",caminho = caminho)
+    caminhos = db.get(id == 'id')
+    return render_template("caminho.html",caminhos = caminhos)
 
 
     
