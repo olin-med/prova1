@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre</title>
+<body>
+    <h1>Coordenadas</h1>
+    
+    <ul>
+        {% for post in posts %}
+            <h3>Caminho</h3>
+            <li>id: {{ post.id }}</li>
+            <li>nome: {{ post.nome }}</li>
+            <li>coordenadas: {{ post.coordenadas }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

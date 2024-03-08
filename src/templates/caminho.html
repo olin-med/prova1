@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre</title>
+<body>
+    <h1>Coordenadas</h1>
+    
+    <ul>
+        {% for caminho in caminho %}
+            <h3>Caminho</h3>
+            <li>id: {{ id.id }}</li>
+            <li>nome: {{ id.nome }}</li>
+            <li>coordenadas: {{ id.coordenadas }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
